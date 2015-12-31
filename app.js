@@ -1,4 +1,3 @@
-
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -27,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Defining main routes
 routes.route(app);
 
-app.use(function(req, res, next){allowCrossDomain(req, res, next);});
+//app.use(function(req, res, next){allowCrossDomain(req, res, next);});
 
 var allowCrossDomain = function(req, res, next) {
 	//res.header('Access-Control-Allow-Origin', Constants.DEV_DOMAIN);
